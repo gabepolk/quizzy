@@ -1,5 +1,29 @@
 (function () {
 
+  var question1 = new Question({
+    question: "What's the capital of California?",
+    answers: ["San Francisco", "Los Angeles", "Sacramento", "San Jose"],
+    correctAnswer: "Sacramento"
+  });
+
+  var question2 = new Question({
+    question: "What's the capital of Texas?",
+    answers: ["Austin", "Houston", "Dallas", "Waco"],
+    correctAnswer: "Austin"
+  });
+
+  var question3 = new Question({
+    question: "What's the capital of Washington?",
+    answers: ["Redmond", "Seattle", "Tacoma", "Olympia"],
+    correctAnswer: "Olympia"
+  });
+
+  // var questionsView = new new QuestionView({
+  //   questions: [question1, question2, question3],
+  //   collection: questions,
+  //   el: '#quiz'
+  // });
+
   // Instantiate a new, empty collection of tasks
   var questions = new Quiz();
 
@@ -13,11 +37,9 @@
   // Add initial tasks AFTER we create our taskListView. This is needed so that the
   // list view can listen for the collection's 'add' events.
   questions.add([
-    { question: "What's the capital of California?" },
-    { question: "What's the capital of Texas?", complete: true },
-    { question: "What's the capital of Washington?" },
-    { question: "What's the capital of Oregon?" },
-    { question: "What's the capital of Nevada?" }
+    question1,
+    question2,
+    question3
   ]);
 
   // Now we create a view to handle user input. This view allows the user to create new tasks.

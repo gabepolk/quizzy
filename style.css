@@ -7,7 +7,7 @@ body {
   background: #f9f9f9;
   margin: 0 auto;
   padding: 1px 20px 20px;
-  width: 500px;
+  width: 450px;
 }
 
 h1 {
@@ -23,16 +23,17 @@ h1 {
   font-size: 1.4em;
 }
 
-#quiz .question label {
+/*#quiz .question label {
   cursor: pointer;
   padding: 0 5px;
 }
 #quiz .question label:hover {
   background: #70CDD4;
-}
+}*/
 
-#quiz .question .check {
-  position: relative; top: -4px;
+#quiz .question .answers {
+  position: relative;
+  float: right;
 }
 
 #quiz .question.done label {

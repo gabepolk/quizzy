@@ -3,7 +3,8 @@
   // MODEL
   window.Question = Backbone.Model.extend({
     defaults: {
-      complete: false
+      complete: false,
+      answer: null
     }
   });
 

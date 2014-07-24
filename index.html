@@ -21,8 +21,11 @@
 
   <script class="question" type="text/template">
     <label>
-      {{ question }}
-      <input class="check" type="checkbox" />
+      <%= question %>
+      <select class="answers">
+        <% for (i = 0; i < answers.length; i++) { %>
+        <option value=<%= answers[i].toLowerCase().replace(/\s/g, '') %>> <%= answers[i] %> </option> <% } %>
+      </select>
     </label>
   </script>
 
